@@ -1,0 +1,3 @@
+com/kg/dao/mongo/MongoMessageDAOTest.class
+com/kg/entities/MessageTest.class
+com/kg/connections/MongoConnectionFactoryTest.class

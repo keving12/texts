@@ -1,0 +1,6 @@
+com/kg/services/MessageService$1.class
+com/kg/dao/mongo/MongoMessageDAO.class
+com/kg/connections/MongoConnectionFactory.class
+com/kg/services/MessageService.class
+com/kg/dao/MessageDAO.class
+com/kg/entities/Message.class

@@ -1,0 +1,5 @@
+/Users/kevingracie/IdeaProjects/texts/src/main/java/com/kg/connections/MongoConnectionFactory.java
+/Users/kevingracie/IdeaProjects/texts/src/main/java/com/kg/dao/MessageDAO.java
+/Users/kevingracie/IdeaProjects/texts/src/main/java/com/kg/entities/Message.java
+/Users/kevingracie/IdeaProjects/texts/src/main/java/com/kg/dao/mongo/MongoMessageDAO.java
+/Users/kevingracie/IdeaProjects/texts/src/main/java/com/kg/services/MessageService.java
