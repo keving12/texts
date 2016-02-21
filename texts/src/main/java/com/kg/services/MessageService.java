@@ -6,6 +6,7 @@ import com.kg.entities.Message;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.GenericEntity;
 import javax.ws.rs.core.MediaType;
@@ -25,10 +26,20 @@ public class MessageService {
     public Response getAllMessages() {
         MessageDAO messageDAO = new MongoMessageDAO();
         List<Message> messages = messageDAO.getAllMessages();
-        System.out.println(messages.size());
         Response response = Response.ok(new GenericEntity<List<Message>>(messages){}).build();
 
         return response;
     }
+
+    @GET
+    @Path("/sender/{sender}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getMessageBySender(@PathParam("sender") String sender) {
+        MessageDAO messageDAO = new MongoMessageDAO();
+        List<Message> messages = messageDAO.getMessagesBySender(sender);
+        Response response = Response.ok(new GenericEntity<List<Message>>(messages){}).build();
+        return response;
+    }
+
 
 }
